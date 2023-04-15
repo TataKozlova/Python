@@ -1,9 +1,6 @@
 #Требуется вывести все целые степени двойки (т.е. числа вида 2k), не превосходящие числа N.
 
 from utils import get_data_from_user
-from math import sqrt
-
-
 
 def main():
     n = int(get_data_from_user("Введите число N"))
