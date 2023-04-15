@@ -8,12 +8,11 @@ import math
 def main():
     count_crane = int(get_data_from_user("Введите количество журавликов"))
     
-    x = count_crane / 6
-    y = 4*x
-
-
-
-    print(f'Катя сделала {math.ceil(y)} журавликов, Петя и Вася по {math.floor(x)} журавликов')
+    boy_count = math.floor(count_crane / 6)
+    girl_count = count_crane - 2*boy_count
+    
+ 
+    print(f'Катя сделала {girl_count} журавликов, Петя и Вася по {boy_count} журавликов')
 
 if __name__ == '__main__':
     main()
